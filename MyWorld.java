@@ -7,6 +7,8 @@ public class MyWorld extends World {
     
     private Label gameOverLabel;
     private Label scoreLabel;
+    
+    int level = 1;
     public MyWorld() {
         super(900, 600, 1);
         Elephant elephant = new Elephant();
@@ -36,11 +38,17 @@ public class MyWorld extends World {
     {
         score++;
         scoreLabel.setValue("Score: " + score);
+        
+        if (score % 5 == 0)
+        {
+            level += 1;
+        }
     }
     
     public void createApple()
     {
         Apple apple = new Apple();
+        apple.setSpeed(level);
         addObject(apple, Greenfoot.getRandomNumber(getWidth()), 0);
     }
 }
