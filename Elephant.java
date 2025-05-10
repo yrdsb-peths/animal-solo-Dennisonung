@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Elephant, the hero
+ * Elephant, the hero ig, collects apples n stuff
  * 
  * @author Denny
  * @version April 30th, 2025

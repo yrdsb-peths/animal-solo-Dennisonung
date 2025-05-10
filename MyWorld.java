@@ -8,10 +8,12 @@ public class MyWorld extends World {
     private Label gameOverLabel;
     private Label scoreLabel;
     
+    Elephant elephant;
+    
     int level = 1;
     public MyWorld() {
         super(900, 600, 1);
-        Elephant elephant = new Elephant();
+        elephant = new Elephant();
         addObject(elephant, getWidth()/2, getHeight()/2);
         createApple();
         
@@ -30,8 +32,8 @@ public class MyWorld extends World {
     {
         gameOverLabel = new Label("Game Over", 50);
         addObject(gameOverLabel,getWidth()/2, getHeight()/2);
-
-    
+        
+        removeObject(elephant);
     }
     
     public void increaseScore()

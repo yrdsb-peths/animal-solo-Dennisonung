@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleScreen here.
+ * the TITLE CARD, or smth idk. a opening scene for the game
  * 
  * @author Denny 
  * @version May 9th 2025
